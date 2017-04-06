@@ -6,7 +6,7 @@ ADD requirements.txt /mlsdupz/requirements.txt
 WORKDIR  /mlsdupz/
 
 # install python dependencies
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 ADD start.sh /root/start.sh
 RUN chmod +x /root/start.sh
