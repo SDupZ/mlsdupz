@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+    # Django web server
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        hostname: web
+        command: ./start.sh
+        volumes:
+            - .:/mlsdupz  # mount current directory inside container

@@ -7,8 +7,3 @@ WORKDIR  /mlsdupz/
 
 # install python dependencies
 RUN pip3 install -r requirements.txt
-
-ADD start.sh /root/start.sh
-RUN chmod +x /root/start.sh
-
-ENTRYPOINT ["/root/start.sh"]
